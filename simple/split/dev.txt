@@ -16,13 +16,11 @@
 # ::snt Bu Dian menaruh tasnya di meja. dan Nenek Tuti sakit kepala setiap hari.
 (d / dan
    :op1 (t / taruh
-           :ARG0 (b / bu
-                    :name (d2 / dian))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "dian"))
            :ARG1 (t2 / tas)
            :location (m / meja))
    :op2 (s / sakit
-           :ARG0 (n / nenek
-                    :name (t3 / tuti))
+           :ARG0 (o / orang :name (n / name :op1 "nenek" :op2 "tuti"))
            :ARG1 (k / kepala)
            :time (h / hari
                     :mod (t4 / tiap))))
@@ -31,14 +29,12 @@
 # ::snt Kakak Budi hutang satu buku cerita. dan Pak Dedi makan bekal di kelas.
 (d / dan
    :op1 (h / hutang
-           :ARG0 (k / kakak
-                    :name (b / budi))
+           :ARG0 (o / orang :name (n / name :op1 "kakak" :op2 "budi"))
            :ARG1 (b2 / buku
                      :mod (s / satu
                              :mod (c / cerita))))
    :op2 (m / makan
-           :ARG0 (p / pak
-                    :name (d2 / dedi))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "dedi"))
            :ARG1 (b3 / bekal)
            :location (k2 / kelas)))
 
@@ -81,7 +77,7 @@
                     :mod (l / lalu
                             :mod (l2 / lintas)))
            :location (s / simpang
-                        :name (j2 / jonin))
+                        :name (n/name :op1 "jonin"))
            :time (p / pukul
                     :mod (s2 / sembilan)))
    :op2 (p2 / pergi
@@ -94,8 +90,7 @@
 # ::snt Ibu Nisa berkata bisa tidur semalam dan kuliah dilaksanakan besok jam tiga
 (d / dan
    :op1 (k / kata
-           :ARG0 (i / ibu
-                    :name (n / nisa))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "nisa"))
            :ARG1 (b / bisa
                     :ARG1 (t / tidur)
                     :time (m / malam)))
@@ -154,8 +149,7 @@
            :location (b / bangku
                         :mod (t / taman)))
    :op2 (c / ceramah
-           :ARG0 (p / pak
-                    :name (j / jamal))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "jamal"))
            :location (d2 / depan
                          :ARG1 (j2 / jamaah
                                    :mod (p2 / para)))))
@@ -170,10 +164,8 @@
                                  :mod (p / pohon))))
    :op2 (l / libur
            :ARG0 (k / keluarga
-                    :mod (p2 / pak
-                             :name (b2 / broto)))
-           :location (p3 / pulau
-                         :name (b3 / bali))
+                    :mod (o / orang :name (n / name :op1 "pak" :op2 "broto")))
+           :location (o / orang :name (n / name :op1 "pulau" :op2 "bali"))
            :time (b4 / bulan
                      :mod (d3 / depan))))
 
@@ -225,8 +217,7 @@
 # ::snt Bapak Siman itu memotong rumput di kebun pagi ini dan Ibu pergi ke rumah sakit
 (d / dan
    :op1 (p / potong
-           :ARG0 (b / bapak
-                    :name (s / siman))
+           :ARG0 (o / orang :name (n / name :op1 "bapak" :op2 "siman"))
            :ARG1 (r / rumput)
            :location (k / kebun)
            :time (p2 / pagi))
@@ -254,7 +245,7 @@
            :time (s / sore
                     :mod (h / hari)))
    :op2 (l / lari
-           :ARG0 (a2 / andi)
+           :ARG0 (o / orang :name (n / name :op1 "andi"))
            :location (l2 / lapangan
                          :mod (b / bola))))
 
@@ -283,7 +274,7 @@
    :op2 (l / lari
            :ARG0 (i / intan)
            :location (l2 / lapangan
-                         :name (g / gerilya))
+                         :name (n/name :op1 "gerilya"))
            :time (p / pukul
                     :mod (e / enam))))
 
@@ -318,7 +309,7 @@
 # ::snt Andi naik helikopter minggu lalu dan Aku juara pertama lomba baca quran kemarin
 (d / dan
    :op1 (n / naik
-           :ARG0 (a / andi)
+           :ARG0 (o / orang :name (n / name :op1 "andi"))
            :ARG1 (h / helikopter)
            :time (m / minggu
                     :mod (l / lalu)))
@@ -354,7 +345,7 @@
            :ARG0 (a / adi)
            :ARG1 (k / kayu)
            :location (k2 / kota
-                         :name (j2 / jakarta))
+                         :name (n/name :op1 "jakarta"))
            :time (p / panjang
                     :mod (t / tahun)))
    :op2 (l / lihat
@@ -405,7 +396,7 @@
            :ARG0 (r / rumah)
            :mod (a2 / atas
                     :mod (n / nama
-                            :name (h / herlinda)))))
+                            :name (n/name :op1 "herlinda")))))
 
 # ::id 957
 # ::snt Orang ini ada di luar rumah dari tadi dan Neneknya meninggal tadi pagi pukul enam
@@ -427,7 +418,7 @@
 # ::snt Diana pergi ke sekolah naik sepeda motor siang ini dan Ayah pulang ke desa malam tadi
 (d / dan
    :op1 (p / pergi
-           :ARG0 (d2 / diana)
+           :ARG0 (o/orang :name (n/name :op1 "diana"))
            :location (s / sekolah)
            :mod (n / naik
                    :ARG1 (s2 / sepeda
@@ -447,13 +438,12 @@
            :location (s / sekolah
                         :mod (d2 / dasar
                                  :mod (n / negeri))
-                        :name (t / tamanan
-                                 :mod "1"))
+                        :name (n/name :op1 "tamanan" :op2 "01"))
            :time (t2 / tahun))
    :op2 (m / main
            :ARG0 (a3 / adik)
            :ARG1 (b / boneka
-                    :name (b2 / barbie))))
+                    :name (n/name :op1 "barbie"))))
 
 # ::id 960
 # ::snt Mobil itu menabrak pagar rumah sampai rusak siang ini dan Ani memberikan ucapan selamat kepada adiknya tadi pagi
@@ -466,7 +456,7 @@
                    :mod (r2 / rusak))
            :time (s2 / siang))
    :op2 (b / beri
-           :ARG0 (a / ani)
+           :ARG0 (o / orang :name (n / name :op1 "ani"))
            :ARG1 (u / ucap
                     :mod (s3 / selamat))
            :mod (k / kepada
@@ -506,12 +496,10 @@
 # ::snt Bu Ani menanam bunga atau Om Andi berangkat ke sekolah besok
 (a / atau
    :op1 (t / tanam
-           :ARG0 (b / bu
-                    :name (a2 / ani))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "ani"))
            :ARG1 (b2 / bunga))
    :op2 (b3 / berangkat
-            :ARG0 (o / om
-                     :name (a3 / andi))
+            :ARG0 (o / orang :name (n / name :op1 "om" :op2 "andi"))
             :ARG1 (s / sekolah
                      :mod (k / ke))
             :time (b4 / besok)))
@@ -520,11 +508,9 @@
 # ::snt Ibu Asih pergi ke rumah Nenek Yanti kemarin atau Kami sekeluarga pergi bertamasya hari Minggu
 (a / atau
    :op1 (p / pergi
-           :ARG0 (i / ibu
-                    :name (a2 / asih))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "asih"))
            :location (r / rumah
-                        :mod (n / nenek
-                                :name (y / yanti)))
+                        :mod (o / orang :name (n / name :op1 "nenek" :op2 "yanti")))
            :time (k / kemarin))
    :op2 (p2 / pergi
             :ARG0 (k2 / kami
@@ -547,8 +533,7 @@
 # ::snt Om Budi makan permen atau Petani menanam padi
 (a / atau
    :op1 (m / makan
-           :ARG0 (o / om
-                    :name (b / budi))
+           :ARG0 (o / orang :name (n / name :op1 "om" :op2 "budi"))
            :ARG1 (p / permen))
    :op2 (t / tanam
            :ARG0 (t2 / tani)
@@ -562,8 +547,7 @@
            :location (k / kantor
                         :mod (k2 / ke)))
    :op2 (m / masak
-           :ARG0 (i / ibu
-                    :name (r / risna))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "risna"))
            :ARG1 (a3 / ayam)
            :location (d / dapur)))
 
@@ -580,8 +564,7 @@
 # ::snt Adik diajak Paman Nadiem bermain atau Upacara tadi dipimpin kepala sekolah
 (a / atau
    :op1 (a2 / ajak
-            :ARG0 (p / paman
-                     :name (n / nadiem))
+            :ARG0 (o / orang :name (n / name :op1 "paman" :op2 "nadiem"))
             :ARG1 (a3 / adik)
             :mod (m / main))
    :op2 (p2 / pimpin
@@ -600,8 +583,7 @@
                              :mod (b2 / basket)))
            :time (h / hari))
    :op2 (a2 / ajak
-            :ARG0 (i / ibu
-                     :name (f / fio))
+            :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "fio"))
             :ARG1 (a3 / adik)
             :location (p / pasar)))
 
@@ -609,8 +591,7 @@
 # ::snt Om Irwan mempunyai sepatu baru atau Semua siswa belajar dengan rajin
 (a / atau
    :op1 (p / punya
-           :ARG0 (o / om
-                    :name (i / irwan))
+           :ARG0 (o / orang :name (n / name :op1 "om" :op2 "irwan"))
            :ARG1 (s / sepatu
                     :mod (b / baru)))
    :op2 (a2 / ajar
@@ -636,34 +617,31 @@
 # ::snt Bu Anna membaca buku kemarin atau Bu Anna membaca buku Bobo
 (a / atau
    :op1 (b / baca
-           :ARG0 (b2 / bu
-                     :name (a2 / anna))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "anna"))
            :ARG1 (b3 / buku)
            :time (k / kemarin))
    :op2 (b4 / baca
-            :ARG0 (b5 / bu
-                      :name (a3 / anna))
+            :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "anna"))
             :ARG1 (b6 / buku
-                      :name (b7 / bobo))))
+                      :name (n/name :op1 "bobo"))))
 
 # ::id 974
 # ::snt Syifa membeli Roti Jaya atau Tante Syifa pergi ke salon Lutuye
 (a / atau
    :op1 (b / beli
-           :ARG0 (s / syifa)
+           :ARG0 (o / orang :name (n / name :op1 "syifa"))
            :ARG1 (r / roti
-                    :name (j / jaya)))
+                    :name (n/name :op1 "jaya")))
    :op2 (p / pergi
-           :ARG0 (t / tante
-                    :name (s2 / syifa))
+           :ARG0 (o / orang :name (n / name :op1 "tante" :op2 "syifa"))
            :location (s3 / salon
-                         :name (l / lutuye))))
+                         :name (n/name :op1 "lutuye"))))
 
 # ::id 975
 # ::snt Zulia mengenakan baju merah atau Mereka mencetak gol ke gawang lawan
 (a / atau
    :op1 (k / kena
-           :ARG0 (z / zulia)
+           :ARG0 (o / orang :name (n / name :op1 "zulia"))
            :ARG1 (b / baju
                     :mod (m / merah)))
    :op2 (c / cetak
@@ -680,19 +658,18 @@
            :ARG1 (s / selebrasi))
    :op2 (s2 / sambut
             :ARG0 (t / tonton)
-            :ARG1 (p / pak
-                     :name (b / budi))
+            :ARG1 (o / orang :name (n / name :op1 "pak" :op2 "budi"))
             :mod (r / riuh)))
 
 # ::id 977
 # ::snt Ashita memintal benang wol atau Ashita memintal benang sutra
 (a / atau
    :op1 (p / pintal
-           :ARG0 (a2 / ashita)
+           :ARG0 (o / orang :name (n / name :op1 "ashita"))
            :ARG1 (b / benang
                     :mod (w / wol)))
    :op2 (p2 / pintal
-            :ARG0 (a3 / ashita)
+            :ARG0 (o / orang :name (n / name :op1 "ashita"))
             :ARG1 (b2 / benang
                       :mod (s / sutra))))
 
@@ -700,12 +677,10 @@
 # ::snt Profesor Joko bermain bola atau Pak Andi menangis di tengah permainan
 (a / atau
    :op1 (m / main
-           :ARG0 (p / profesor
-                    :name (j / joko))
+           :ARG0 (o / orang :name (n / name :op1 "profesor" :op2 "joko"))
            :ARG1 (b / bola))
    :op2 (t / tangis
-           :ARG0 (p2 / pak
-                     :name (a2 / andi))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "andi"))
            :location (t2 / tengah
                          :mod (p3 / permainan))))
 
@@ -715,15 +690,14 @@
    :op1 (t / tidur
            :ARG0 (a2 / ayah))
    :op2 (m / main
-           :ARG0 (r / risya)
+           :ARG0 (o / orang :name (n / name :op1 "risya"))
            :ARG1 (v / voli)))
 
 # ::id 980
 # ::snt Bola itu ditendang Bos Andi atau Permainan itu berjalan menarik
 (a / atau
    :op1 (t / tendang
-           :ARG0 (b / bos
-                    :name (a2 / andi))
+           :ARG0 (o / orang :name (n / name :op1 "bos" :op2 "andi"))
            :ARG1 (b2 / bola
                      :mod (i / itu)))
    :op2 (j / jalan
@@ -746,7 +720,7 @@
 # ::snt Suminah adalah anak kedua atau Ia dimanja
 (a / atau
    :op1 (a2 / adalah
-            :ARG0 (s / suminah)
+            :ARG0 (o / orang :name (n / name :op1 "suminah"))
             :mod (a3 / anak
                      :mod (d / dua)))
    :op2 (m / manja
@@ -777,30 +751,29 @@
 # ::snt Dewi anak yang manja atau Orang yang merangkak itu Rudi
 (a / atau
    :op1 (a2 / anak
-            :ARG0 (d / dewi)
+            :ARG0 (o / orang :name (n / name :op1 "dewi"))
             :mod (m / manja))
    :op2 (r / rangkak
            :ARG0 (o / orang
-                    :name (r2 / rudi))))
+                    :name (n/name :op1 "rudi"))))
 
 # ::id 986
 # ::snt Pak Sasu seorang CEO muda di Indonesia atau Andriana anak yang pemberani
 (a / atau
    :op1 (o / orang
-           :ARG0 (p / pak
-                    :name (s / sasu))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "sasu"))
            :ARG1 (c / ceo
                     :mod (m / muda))
            :location (i / indonesia))
    :op2 (a2 / anak
-            :ARG0 (a3 / andriana)
+            :ARG0 (o / orang :name (n / name :op1 "andriana"))
             :mod (b / berani)))
 
 # ::id 987
 # ::snt Zia adalah mayoret kelompok Marching Band itu atau Mereka siswa SMA Dua Nusantara
 (a / atau
    :op1 (a2 / adalah
-            :ARG0 (z / zia)
+            :ARG0 (o / orang :name (n / name :op1 "zia"))
             :ARG1 (m / mayoret
                      :mod (k / kelompok
                              :mod (m2 / marching
@@ -808,14 +781,14 @@
    :op2 (s / siswa
            :ARG0 (m3 / mereka)
            :mod (s2 / sma
-                    :name (d / dua)
-                    :name (n / nusantara))))
+                    :name (n/name :op1 "dua" :op2 "nusantara")
+)))
 
 # ::id 988
 # ::snt Teguh seorang perwira polisi atau Ramadhan merupakan bulan yang suci
 (a / atau
    :op1 (o / orang
-           :ARG0 (t / teguh)
+           :ARG0 (o / orang :name (n / name :op1 "teguh"))
            :ARG1 (p / perwira
                     :mod (p2 / polisi)))
    :op2 (r / rupa
@@ -827,17 +800,17 @@
 # ::snt Andi membaca buku atau Siana berlari di lapangan
 (a / atau
    :op1 (b / baca
-           :ARG0 (a2 / andi)
+           :ARG0 (o / orang :name (n / name :op1 "andi"))
            :ARG1 (b2 / buku))
    :op2 (l / lari
-           :ARG0 (s / siana)
+           :ARG0 (o / orang :name (n / name :op1 "siana"))
            :location (l2 / lapang)))
 
 # ::id 990
 # ::snt Siwan mengerjakan tugas di perpustakaan kampus atau Bumi berotasi
 (a / atau
    :op1 (k / kerja
-           :ARG0 (s / siwan)
+           :ARG0 (o / orang :name (n / name :op1 "siwan"))
            :ARG1 (t / tugas)
            :location (p / pustaka
                         :mod (k2 / kampus)))
@@ -851,7 +824,7 @@
            :ARG0 (b / bola)
            :location (u / udara))
    :op2 (s / sapa
-           :ARG0 (d / dika)
+           :ARG0 (o / orang :name (n / name :op1 "dika"))
            :ARG1 (t / tiap
                     :mod (o / orang
                             :mod (l / lewat)))))
@@ -864,7 +837,7 @@
                     :mod (p / pisa))
            :mod (m2 / miring))
    :op2 (b / baca
-           :ARG0 (s / sonia)
+           :ARG0 (o / orang :name (n / name :op1 "sonia"))
            :ARG1 (j / jurnal
                     :mod (h / hari
                             :mod (s2 / sekolah)))
@@ -896,7 +869,7 @@
 # ::snt Sepatu Anna dua pasang atau Ada Coklat tiga biji
 (a / atau
    :op1 (s / sepatu
-           :ARG0 (a2 / anna)
+           :ARG0 (o / orang :name (n / name :op1 "anna"))
            :mod (p / pasang
                    :mod (d / dua)))
    :op2 (a3 / ada
@@ -919,12 +892,10 @@
 # ::snt Tante Ari naik sepeda atau Bu Ayu menjadi lulusan terbaik IPB tahun 2017
 (a / atau
    :op1 (n / naik
-           :ARG0 (t / tante
-                    :name (a2 / ari))
+           :ARG0 (o / orang :name (n / name :op1 "tante" :op2 "ari"))
            :ARG1 (s / sepeda))
    :op2 (j / jadi
-           :ARG0 (b / bu
-                    :name (a3 / ayu))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "ayu"))
            :ARG1 (l / lulus
                     :mod (b2 / baik
                              :mod (i / ipb)
@@ -946,12 +917,11 @@
 # ::snt Arya membeli telur di minimarket atau telur dibeli Kakek Arya di minimarket
 (a / atau
    :op1 (b / beli
-           :ARG0 (a2 / arya)
+           :ARG0 (o / orang :name (n / name :op1 "arya"))
            :ARG1 (t / telur)
            :location (m / minimarket))
    :op2 (b2 / beli
-            :ARG0 (k / kakek
-                     :name (a3 / arya))
+            :ARG0 (o / orang :name (n / name :op1 "kakek" :op2 "arya"))
             :ARG1 (t2 / telur)
             :location (m2 / minimarket)))
 
@@ -986,7 +956,7 @@
            :location (m2 / meja
                          :mod (a3 / atas)))
    :op2 (d / dapat
-           :ARG0 (a4 / aji)
+           :ARG0 (o / orang :name (n / name :op1 "aji"))
            :ARG1 (k / kerja
                     :mod (b / bagus))
            :location (p / perusahaan
@@ -1007,7 +977,7 @@
 # ::snt Riana pergi ke pasar atau Ayah dari kota
 (a / atau
    :op1 (p / pergi
-           :ARG0 (r / riana)
+           :ARG0 (o / orang :name (n / name :op1 "riana"))
            :location (p2 / pasar))
    :op2 (d / dari
            :ARG0 (a2 / ayah)
@@ -1020,7 +990,7 @@
            :ARG0 (a2 / ayah)
            :ARG1 (b2 / boneka))
    :op2 (m / main
-           :ARG0 (k / kesang)
+           :ARG0 (o / orang :name (n / name :op1 "kesang")
            :ARG1 (b3 / bola)))
 
 # ::id 1006
@@ -1035,7 +1005,7 @@
            :time (p2 / pagi
                      :mod (i / ini)))
    :op2 (b / beri
-           :ARG0 (a2 / agung)
+           :ARG0 (o / orang :name (n / name :op1 "agung"))
            :ARG1 (s / selamat
                     :ARG1 (p3 / pada))
            :time (b2 / bulan
@@ -1157,8 +1127,7 @@
 # ::snt Bu Rifqy mengetahui perasaannya atau Alfiansyah juara renang
 (a / atau
    :op1 (t / tahu
-           :ARG0 (b / bu
-                    :name (r / rifqy))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "rifqy"))
            :ARG1 (r2 / rasa))
    :op2 (j / juara
            :ARG0 (a2 / alfiansyah)
@@ -1287,8 +1256,7 @@
                              :mod (m / meriah)))
            :mod (t3 / tonton))
    :op2 (a3 / antar
-            :ARG0 (p / pak
-                     :name (r / rifqy))
+            :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "rifqy"))
             :ARG1 (a4 / aku)
             :time (h / hari
                      :mod (i / ini))))
@@ -1569,8 +1537,7 @@
            :ARG1 (p / perempuan
                     :mod (p2 / pesona)))
    :op2 (a2 / akhir
-            :ARG0 (b / bu
-                     :name (a3 / ayu))
+            :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "ayu"))
             :ARG1 (k2 / kisah
                       :mod (b2 / bahagia))))
 
@@ -1593,11 +1560,9 @@
 # ::snt Suatu hari, Om Aria datang menemui Tante Laisha atau Mereka duduk bersebelahan di dalam trem
 (a / atau
    :op1 (d / datang
-           :ARG0 (o / om
-                    :name (a2 / aria))
+           :ARG0 (o / orang :name (n / name :op1 "om" :op2 "aria"))
            :ARG1 (t / temu
-                    :ARG1 (t2 / tante
-                              :name (l / laisha))))
+                    :ARG1 (o / orang :name (n / name :op1 "tante" :op2 "laisha"))))
    :op2 (d2 / duduk
             :ARG0 (m / mereka)
             :location (d3 / dalam
@@ -1614,20 +1579,17 @@
                             :mod (r / ribu
                                     :mod (r2 / rupiah)))))
    :op2 (b2 / beri
-            :ARG0 (s / suster
-                     :name (n / nabilla))
+            :ARG0 (o / orang :name (n / name :op1 "suster" :op2 "nabilla"))
             :ARG1 (k / kripik)))
 
 # ::id 1050
 # ::snt Pak Aria menyelesaikan tesis atau Paman Anto membawa bingkisan
 (a / atau
    :op1 (s / selesai
-           :ARG0 (p / pak
-                    :name (a2 / aria))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "aria"))
            :ARG1 (t / tesis))
    :op2 (b / bawa
-           :ARG0 (p2 / paman
-                     :name (a3 / anto))
+           :ARG0 (o / orang :name (n / name :op1 "paman" :op2 "anto"))
            :ARG1 (b2 / bingkisan)))
 
 # ::id 1051
@@ -1636,8 +1598,7 @@
    :op1 (k / kunjung
            :ARG0 (a2 / aku)
            :ARG1 (m / museum
-                    :name (v / van
-                             :name (g / Gogh))))
+                    :name ( n/name :op1 "van" :op2 "Gogh")))
    :op2 (m2 / main
             :ARG0 (w / wafir)
             :ARG1 (g2 / gitar)
@@ -1653,10 +1614,8 @@
                              :mod (b / baik
                                      :mod (l2 / lagi)))))
    :op2 (t / temu
-           :ARG0 (b2 / bu
-                     :name (a3 / ayu))
-           :ARG1 (p / pak
-                    :name (j2 / jabbar))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "ayu"))
+           :ARG1 (o / orang :name (n / name :op1 "pak" :op2 "jabbar"))
            :location (k / konser)
            :mod (s / sengaja)))
 
@@ -1718,15 +1677,14 @@
 # ::snt Paman Noel membawa serabi dari Semarang atau Kerja kelompok hari ini akan dilakukan di rumah Ami
 (a / atau
    :op1 (b / bawa
-           :ARG0 (p / paman
-                    :name (n / noel))
+           :ARG0 (o / orang :name (n / name :op1 "paman" :op2 "noel"))
            :ARG1 (s / serabi)
            :location (s2 / semarang))
    :op2 (l / laku
            :ARG1 (k / kerja
                     :mod (k2 / kelompok))
            :location (r / rumah
-                        :name (a2 / ami))
+                        :name (n/name :op1 "ami"))
            :time (h / hari
                     :mod (i / ini))))
 
@@ -1776,7 +1734,7 @@
            :ARG1 (k3 / kereta
                      :mod (a3 / api))
            :location (s / stasiun
-                        :name (g / gambir))))
+                        :name (n/name :op1 "gambir"))))
 
 # ::id 1062
 # ::snt Dodol merupakan makanan khas dari Garut atau Banyak wisatawan mancanegara yang berwisata ke Pulau Bali
@@ -1804,8 +1762,7 @@
                                             :mod (d2 / dulu)))))
            :location (r / rumah))
    :op2 (r2 / rupa
-            :ARG0 (p / profesor
-                     :name (m2 / manaf))
+            :ARG0 (o / orang :name (n / name :op1 "profesor" :op2 "manaf"))
             :ARG1 (j / jebol
                      :location (u / universitas
                                   :location (c / connecticut)))))
@@ -1814,20 +1771,17 @@
 # ::snt Ibu Dita membaca buku atau Pak Roni membeli Roti
 (a / atau
    :op1 (b / baca
-           :ARG0 (i / ibu
-                    :name (d / dita))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "dita"))
            :ARG1 (b2 / buku))
    :op2 (b3 / beli
-            :ARG0 (p / pak
-                     :name (r / roni))
+            :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "roni"))
             :ARG1 (r2 / roti)))
 
 # ::id 1065
 # ::snt Mbak Tukimin mengenakan baju merah atau Kita mencetak gol ke gawang lawan
 (a / atau
    :op1 (k / kena
-           :ARG0 (m / mbak
-                    :name (t / tukimin))
+           :ARG0 (o / orang :name (n / name :op1 "mbak" :op2 "tukimin"))
            :ARG1 (b / baju
                     :mod (m2 / merah)))
    :op2 (c / cetak
@@ -1840,8 +1794,7 @@
 # ::snt Mbak Shinta memintal benang wol atau Saya mengetik cerita
 (a / atau
    :op1 (p / pintal
-           :ARG0 (m / mbak
-                    :name (s / shinta))
+           :ARG0 (o / orang :name (n / name :op1 "mbak" :op2 "shinta"))
            :ARG1 (b / benang
                     :mod (w / wol)))
    :op2 (k / ketik
@@ -1865,21 +1818,18 @@
    :op1 (h / haus
            :ARG0 (k / kita))
    :op2 (b / beli
-           :ARG0 (a2 / ayah
-                     :name (d / dodi))
+           :ARG0 (o / orang :name (n / name :op1 "ayah" :op2 "dodi"))
            :ARG1 (m / motor)))
 
 # ::id 1069
 # ::snt Ibu Sukiyem menjual kue di pasar atau Mas Ridho bertanya pada guru
 (a / atau
    :op1 (j / jual
-           :ARG0 (i / ibu
-                    :name (s / sukiyem))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "sukiyem"))
            :ARG1 (k / kue)
            :location (p / pasar))
    :op2 (t / tanya
-           :ARG0 (m / mas
-                    :name (r / ridho))
+           :ARG0 (o / orang :name (n / name :op1 "mas" :op2 "ridho"))
            :ARG1 (g / guru)))
 
 # ::id 1070
@@ -1903,35 +1853,29 @@
 # ::snt Ibu Rina memasak di dapur atau Ibu Tina pergi ke pasar
 (a / atau
    :op1 (m / masak
-           :ARG0 (i / ibu
-                    :name (r / rina))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "rina"))
            :location (d / dapur))
    :op2 (p / pergi
-           :ARG0 (i2 / ibu
-                     :name (t / tina))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "tina"))
            :location (p2 / pasar)))
 
 # ::id 1073
 # ::snt Kak Rima menulis surat atau Pak Toni menutup jendela
 (a / atau
    :op1 (t / tulis
-           :ARG0 (k / kak
-                    :name (r / rima))
+           :ARG0 (o / orang :name (n / name :op1 "kak" :op2 "rima"))
            :ARG1 (s / surat))
    :op2 (t2 / tutup
-            :ARG0 (p / pak
-                     :name (t3 / toni))
+            :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "toni"))
             :ARG1 (j / jendela)))
 
 # ::id 1074
 # ::snt Bu Ayu mendesah atau Susi menyiram tanaman
 (a / atau
    :op1 (d / desah
-           :ARG0 (b / bu
-                    :name (a2 / ayu)))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "ayu")))
    :op2 (s / siram
-           :ARG0 (b2 / bu
-                     :name (s2 / susi))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "susi"))
            :ARG1 (t / tanam)))
 
 # ::id 1075
@@ -1946,8 +1890,7 @@
 # ::snt Ibu Dodi bersimpuh atau Kami bersujud
 (a / atau
    :op1 (s / simpuh
-           :ARG0 (i / ibu
-                    :name (d / dodi)))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "dodi")))
    :op2 (s2 / sujud
             :ARG0 (k / kami)))
 
@@ -1974,21 +1917,18 @@
             :ARG0 (p / polisi)
             :ARG1 (l / lalin))
    :op2 (t / tutup
-           :ARG0 (b / bu
-                    :name (r / resti))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "resti"))
            :ARG1 (m / mata)))
 
 # ::id 1080
 # ::snt Kak Sally membuat adonan atau Aku mengikuti Bapak John
 (a / atau
    :op1 (b / buat
-           :ARG0 (k / kak
-                    :name (s / sally))
+           :ARG0 (o / orang :name (n / name :op1 "kak" :op2 "sally"))
            :ARG1 (a2 / adon))
    :op2 (i / ikut
            :ARG0 (a3 / aku)
-           :ARG1 (b2 / bapak
-                     :name (j / john))))
+           :ARG1 (o / orang :name (n / name :op1 "bapak" :op2 "john"))))
 
 # ::id 1081
 # ::snt Tukang membangun rumah atau Nenek Yanti menanti Kakek Joni
@@ -1997,10 +1937,8 @@
            :ARG0 (t / tukang)
            :ARG1 (r / rumah))
    :op2 (n / nanti
-           :ARG0 (n2 / nenek
-                     :name (y / yanti))
-           :ARG1 (k / kakek
-                    :name (j / joni))))
+           :ARG0 (o / orang :name (n / name :op1 "nenek" :op2 "yanti"))
+           :ARG1 (o / orang :name (n / name :op1 "kakek" :op2 "joni"))))
 
 # ::id 1082
 # ::snt Kami membasuh muka atau Pakdhe Yayas menampar kakak
@@ -2009,8 +1947,7 @@
            :ARG0 (k / kami)
            :ARG1 (m / muka))
    :op2 (t / tampar
-           :ARG0 (p / pakdhe
-                    :name (y / yayas))
+           :ARG0 (o / orang :name (n / name :op1 "pakdhe" :op2 "yayas"))
            :ARG1 (k2 / kakak)))
 
 # ::id 1083
@@ -2020,8 +1957,7 @@
            :ARG0 (k / kami)
            :ARG1 (d2 / darah))
    :op2 (t / tipu
-           :ARG0 (o / om
-                    :name (w / wiwit))
+           :ARG0 (o / orang :name (n / name :op1 "om" :op2 "wiwit"))
            :ARG1 (t2 / teman)))
 
 # ::id 1084
@@ -2032,8 +1968,7 @@
            :ARG1 (a2 / adik))
    :op2 (r / rindu
            :ARG0 (a3 / aku)
-           :ARG1 (b / bu
-                    :name (a4 / azka))))
+           :ARG1 (o / orang :name (n / name :op1 "bu" :op2 "azka"))))
 
 # ::id 1085
 # ::snt Adik membawa makanan atau Suster Siska merawat pasien
@@ -2042,16 +1977,14 @@
            :ARG0 (a2 / adik)
            :ARG1 (m / makan))
    :op2 (r / rawat
-           :ARG0 (s / suster
-                    :name (s2 / siska))
+           :ARG0 (o / orang :name (n / name :op1 "suster" :op2 "siska"))
            :ARG1 (p / pasien)))
 
 # ::id 1086
 # ::snt Tante Suti mencicipi masakan atau Aku bercerita
 (a / atau
    :op1 (c / cicip
-           :ARG0 (t / tante
-                    :name (s / suti))
+           :ARG0 (o / orang :name (n / name :op1 "tante" :op2 "suti"))
            :ARG1 (m / masak))
    :op2 (c2 / cerita
             :ARG0 (a2 / aku)))
@@ -2060,11 +1993,9 @@
 # ::snt Kakek Glenn meninggal atau Tante Siti melamar pekerjaan
 (a / atau
    :op1 (t / tinggal
-           :ARG0 (k / kakek
-                    :name (g / glenn)))
+           :ARG0 (o / orang :name (n / name :op1 "kakek" :op2 "glenn")))
    :op2 (l / lamar
-           :ARG0 (t2 / tante
-                     :name (s / siti))
+           :ARG0 (o / orang :name (n / name :op1 "tante" :op2 "siti"))
            :ARG1 (k2 / kerja)))
 
 # ::id 1088
@@ -2074,21 +2005,18 @@
            :ARG0 (p / peluru)
            :ARG1 (d / doni))
    :op2 (r / rambut
-           :ARG0 (n / nenek
-                    :name (k / krista))
+           :ARG0 (o / orang :name (n / name :op1 "nenek" :op2 "krista"))
            :ARG1 (p2 / putih)))
 
 # ::id 1089
 # ::snt Kak Putri berkata kasar atau Adik Kayla tertabrak mobil
 (a / atau
    :op1 (k / kata
-           :ARG0 (k2 / kak
-                     :name (p / putri))
+           :ARG0 (o / orang :name (n / name :op1 "kak" :op2 "putri"))
            :ARG1 (k3 / kasar))
    :op2 (t / tabrak
            :ARG0 (m / mobil)
-           :ARG1 (a2 / adik
-                     :name (k4 / kayla))))
+           :ARG1 (o / orang :name (n / name :op1 "adik" :op2 "kayla"))))
 
 # ::id 1090
 # ::snt Kami berteriak atau Pak Risman tertimpa pohon
@@ -2096,16 +2024,14 @@
    :op1 (t / teriak
            :ARG0 (k / kami))
    :op2 (t2 / timpa
-            :ARG0 (p / pak
-                     :name (r / risman))
+            :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "risman"))
             :ARG1 (p2 / pohon)))
 
 # ::id 1091
 # ::snt Bu Angela membaca naskah drama atau Ibu membawa adik ke pasar
 (a / atau
    :op1 (b / baca
-           :ARG0 (b2 / bu
-                     :name (a2 / angela))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "angela"))
            :ARG1 (n / naskah
                     :mod (d / drama)))
    :op2 (b3 / bawa
@@ -2117,45 +2043,38 @@
 # ::snt Budhe Tiwi menggelar tikar atau Pak Ahmad membawa makanan
 (a / atau
    :op1 (g / gelar
-           :ARG0 (b / budhe
-                    :name (t / tiwi))
+           :ARG0 (o / orang :name (n / name :op1 "budhe" :op2 "tiwi"))
            :ARG1 (t2 / tikar))
    :op2 (b2 / bawa
-            :ARG0 (p / pak
-                     :name (a2 / ahmad))
+            :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "ahmad"))
             :ARG1 (m / makan)))
 
 # ::id 1093
 # ::snt Kakak Dina menghadiri pesta pernikahan atau Ibu Fio menjahit baju
 (a / atau
    :op1 (h / hadir
-           :ARG0 (k / kakak
-                    :name (d / dina))
+           :ARG0 (o / orang :name (n / name :op1 "kakak" :op2 "dina"))
            :ARG1 (p / pesta
                     :mod (n / nikah)))
    :op2 (j / jahit
-           :ARG0 (i / ibu
-                    :name (f / fio))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "fio"))
            :ARG1 (b / baju)))
 
 # ::id 1094
 # ::snt Om Bagus memperbaiki motor atau Pak Ridwan menyumbang semen
 (a / atau
    :op1 (b / baik
-           :ARG0 (o / om
-                    :name (b2 / bagus))
+           :ARG0 (o / orang :name (n / name :op1 "om" :op2 "bagus"))
            :ARG1 (m / motor))
    :op2 (s / sumbang
-           :ARG0 (p / pak
-                    :name (r / ridwan))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "ridwan"))
            :ARG1 (s2 / semen)))
 
 # ::id 1095
 # ::snt Bu Bowo membenamkan tikus di sawah atau Afgan menyanyikan lagu sendu
 (a / atau
    :op1 (b / benam
-           :ARG0 (b2 / bu
-                     :name (b3 / bowo))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "bowo"))
            :ARG1 (t / tikus)
            :location (s / sawah))
    :op2 (n / nyanyi
@@ -2167,8 +2086,7 @@
 # ::snt Ibu Tina menyimpan wasiat atau Ayah mengunci pintu
 (a / atau
    :op1 (s / simpan
-           :ARG0 (i / ibu
-                    :name (t / tina))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "tina"))
            :ARG1 (w / wasiat))
    :op2 (k / kunci
            :ARG0 (a2 / ayah)
@@ -2198,10 +2116,8 @@
 # ::snt Pak Bagus menyukai Bu Ani atau Paman membuang sampah
 (a / atau
    :op1 (s / suka
-           :ARG0 (p / pak
-                    :name (b / bagus))
-           :ARG1 (b2 / bu
-                     :name (a2 / ani)))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "bagus"))
+           :ARG1 (o / orang :name (n / name :op1 "bu" :op2 "ani")))
    :op2 (b3 / buang
             :ARG0 (p2 / paman)
             :ARG1 (s2 / sampah)))
@@ -2213,8 +2129,7 @@
            :ARG0 (y / yanto)
            :ARG1 (t / tugas))
    :op2 (t2 / tuang
-            :ARG0 (i / ibu
-                     :name (r / rina))
+            :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "rina"))
             :ARG1 (a2 / air)))
 
 # ::id 1101
@@ -2240,8 +2155,7 @@
 (a / atau
    :op1 (t / timpa
            :ARG0 (p / pohon)
-           :ARG1 (m / mas
-                    :name (r / rio)))
+           :ARG1 (o / orang :name (n / name :op1 "mas" :op2 "rio")))
    :op2 (t2 / tembak
             :ARG0 (d / duta
                      :mod (b / besar))
@@ -2262,15 +2176,14 @@
 # ::snt Bu Hana mengajarkan statistik kepada mahasiswa atau Kami membeli buku di toko Gramedia
 (a / atau
    :op1 (a2 / ajar
-            :ARG0 (b / bu
-                     :name (h / hana))
+            :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "hana"))
             :ARG1 (s / statistik)
             :mod (m / mahasiswa))
    :op2 (b2 / beli
             :ARG0 (k / kami)
             :ARG1 (b3 / buku)
             :location (t / toko
-                         :name (g / gramedia))))
+                         :name (n/name :op1 "gramedia"))))
 
 # ::id 1106
 # ::snt Ayah terjatuh di persimpangan jalan atau Kakak Judi meninggalkan pacarnya
@@ -2280,20 +2193,17 @@
            :location (s / simpang
                         :mod (j2 / jalan)))
    :op2 (t / tinggal
-           :ARG0 (k / kakak
-                    :name (j3 / judi))
+           :ARG0 (o / orang :name (n / name :op1 "kakak" :op2 "judi"))
            :ARG1 (p / pacar)))
 
 # ::id 1107
 # ::snt Pak Camat berpidato di podium atau Ulama Abdul memimpin umat
 (a / atau
    :op1 (p / pidato
-           :ARG0 (p2 / pak
-                     :name (c / camat))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "camat"))
            :location (p3 / podium))
    :op2 (p4 / pimpin
-            :ARG0 (u / ulama
-                     :name (a2 / abdul))
+            :ARG0 (o / orang :name (n / name :op1 "ulama" :op2 "abdul"))
             :ARG1 (u2 / umat)))
 
 # ::id 1108
@@ -2304,8 +2214,7 @@
            :ARG1 (s / sayur)
            :location (w / warung))
    :op2 (t / tanam
-           :ARG0 (k / kak
-                    :name (m / mira))
+           :ARG0 (o / orang :name (n / name :op1 "kak" :op2 "mira"))
            :ARG1 (t2 / tanam)
            :mod (o / obat)))
 
@@ -2334,8 +2243,7 @@
 # ::snt Mas Linton membuka kaleng roti atau Ibu berbelanja
 (a / atau
    :op1 (b / buka
-           :ARG0 (m / mas
-                    :name (l / linton))
+           :ARG0 (o / orang :name (n / name :op1 "mas" :op2 "linton"))
            :ARG1 (k / kaleng)
            :mod (r / roti))
    :op2 (b2 / belanja
@@ -2356,8 +2264,7 @@
 # ::snt Pak Joko memukul pencuri di rumah atau Saya membuka kaleng roti
 (a / atau
    :op1 (p / pukul
-           :ARG0 (p2 / pak
-                     :name (j / joko))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "joko"))
            :ARG1 (c / curi)
            :location (r / rumah))
    :op2 (b / buka
@@ -2378,8 +2285,7 @@
 # ::snt Bu Susi mendukung pemerintah atau Ayah memukul pencuri di rumah
 (a / atau
    :op1 (d / dukung
-           :ARG0 (b / bu
-                    :name (s / susi))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "susi"))
            :ARG1 (p / perintah))
    :op2 (p2 / pukul
             :ARG0 (a2 / ayah)
@@ -2393,8 +2299,7 @@
            :ARG0 (c / cpu)
            :ARG1 (m / menang))
    :op2 (b / beri
-           :ARG0 (p / pak
-                    :name (d / dwi))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "dwi"))
            :ARG1 (h / hadiah
                     :ARG1 (m2 / menang))))
 
@@ -2406,8 +2311,7 @@
            :ARG1 (a2 / adik
                      :mod (p2 / perempuan)))
    :op2 (b / bawa
-           :ARG0 (b2 / bu
-                     :name (s2 / sakinah))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "sakinah"))
            :ARG1 (a3 / adik)
            :location (s3 / sekolah)))
 
@@ -2425,8 +2329,7 @@
 # ::snt Mas Anis mengajukan keluhan atau Deformasi gambar
 (a / atau
    :op1 (a2 / aju
-            :ARG0 (m / mas
-                     :name (a3 / anis))
+            :ARG0 (o / orang :name (n / name :op1 "mas" :op2 "anis"))
             :ARG1 (k / keluh))
    :op2 (g / gambar
            :ARG1 (d / deformasi)))
@@ -2435,12 +2338,10 @@
 # ::snt Bu Okta melukis wanita atau Mas Budi mencetak kartu nama di Sampurna
 (a / atau
    :op1 (l / lukis
-           :ARG0 (b / bu
-                    :name (o / okta))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "okta"))
            :ARG1 (w / wanita))
    :op2 (c / cetak
-           :ARG0 (m / mas
-                    :name (b2 / budi))
+           :ARG0 (o / orang :name (n / name :op1 "mas" :op2 "budi"))
            :ARG1 (k / kartu
                     :mod (n / nama))
            :location (s / sampurna)))
@@ -2472,8 +2373,7 @@
            :ARG0 (m / mereka)
            :ARG1 (k / kalah))
    :op2 (j / jual
-           :ARG0 (a2 / adik
-                     :name (z / zahra))
+           :ARG0 (o / orang :name (n / name :op1 "adik" :op2 "zahra"))
            :ARG1 (k2 / kue)))
 
 # ::id 1124
@@ -2483,8 +2383,7 @@
            :ARG0 (i / ibu)
            :ARG1 (m / makan))
    :op2 (d / dapat
-           :ARG0 (s / suster
-                    :name (d2 / diana))
+           :ARG0 (o / orang :name (n / name :op1 "suster" :op2 "diana"))
            :ARG1 (u / uang)))
 
 # ::id 1125
@@ -2508,8 +2407,7 @@
            :location (h / hutan))
    :op2 (c / cerita
            :ARG0 (b2 / bu
-                     :name (z / zee
-                              :name (z2 / zee)))
+                     :name (o / orang :name (n / name :op1 "zee" :op2 "zee")))
            :ARG1 (k / kisah
                     :mod (t2 / tragis))))
 
@@ -2539,8 +2437,7 @@
 # ::snt Pak Ogah menanam padi atau Kontraktor membeli tanaman
 (a / atau
    :op1 (t / tanam
-           :ARG0 (p / pak
-                    :name (o / ogah))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "ogah"))
            :ARG1 (p2 / padi))
    :op2 (b / beli
            :ARG0 (k / kontraktor)
@@ -2553,8 +2450,7 @@
            :ARG0 (a2 / antara)
            :ARG1 (t / tani))
    :op2 (t2 / tonton
-            :ARG0 (d / dik
-                     :name (d2 / dilan))
+            :ARG0 (o / orang :name (n / name :op1 "dik" :op2 "dilan"))
             :ARG1 (k / kartun)
             :location (t3 / tv)))
 
@@ -2562,8 +2458,7 @@
 # ::snt Ibu Salsa menuangkan air atau Ibu melipat pakaian
 (a / atau
    :op1 (t / tuang
-           :ARG0 (i / ibu
-                    :name (s / salsa))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "salsa"))
            :ARG1 (a2 / air))
    :op2 (l / lipat
            :ARG0 (i2 / ibu)
@@ -2576,8 +2471,7 @@
            :ARG0 (w / wartawan)
            :ARG1 (b / berita))
    :op2 (k / kunyah
-           :ARG0 (s / sister
-                    :name (a2 / asti))
+           :ARG0 (o / orang :name (n / name :op1 "sister" :op2 "asti"))
            :ARG1 (p / permen)))
 
 # ::id 1133
@@ -2587,16 +2481,14 @@
            :ARG0 (a2 / ayah)
            :ARG1 (m / mobil))
    :op2 (b / buat
-           :ARG0 (b2 / bu
-                     :name (p / prapto))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "prapto"))
            :ARG1 (p2 / pupuk)))
 
 # ::id 1134
 # ::snt Pak Adi meledakkan pipa di halaman atau Krishna menanam kedelai di kebun
 (a / atau
    :op1 (l / ledak
-           :ARG0 (p / pak
-                    :name (a2 / adi))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "adi"))
            :ARG1 (p2 / pipa)
            :location (h / halaman))
    :op2 (t / tanam
@@ -2608,8 +2500,7 @@
 # ::snt Mbak Rina mencuci di kamar mandi atau Nenek sedang menunggu kakek di teras
 (a / atau
    :op1 (c / cuci
-           :ARG0 (m / mbak
-                    :name (r / rina))
+           :ARG0 (o / orang :name (n / name :op1 "mbak" :op2 "rina"))
            :location (k / kamar
                         :mod (m2 / mandi)))
    :op2 (t / tunggu
@@ -2624,8 +2515,7 @@
            :ARG0 (a2 / anda)
            :ARG1 (d / dapur))
    :op2 (s / seberang
-           :ARG0 (m / mas
-                    :name (d2 / dudi))
+           :ARG0 (o / orang :name (n / name :op1 "mas" :op2 "dudi"))
            :ARG1 (s2 / sungai)))
 
 # ::id 1137
@@ -2635,8 +2525,7 @@
            :ARG0 (i / ia)
            :ARG1 (u / uang))
    :op2 (m / main
-           :ARG0 (k / kak
-                    :name (i2 / intan))
+           :ARG0 (o / orang :name (n / name :op1 "kak" :op2 "intan"))
            :ARG1 (b / bola)))
 
 # ::id 1138
@@ -2653,8 +2542,7 @@
 # ::snt Mbak Hana menggambar kartun atau Akmal berangkat ke sekolah
 (a / atau
    :op1 (g / gambar
-           :ARG0 (m / mbak
-                    :name (h / hana))
+           :ARG0 (o / orang :name (n / name :op1 "mbak" :op2 "hana"))
            :ARG1 (k / kartun))
    :op2 (b / berangkat
            :ARG0 (a2 / akmal)
@@ -2678,8 +2566,7 @@
    :op1 (p / pingsan
            :ARG0 (i / ibu))
    :op2 (k / kunjung
-           :ARG0 (p2 / presiden
-                     :name (j / joko))
+           :ARG0 (o / orang :name (n / name :op1 "presiden" :op2 "joko"))
            :location (p3 / papua)))
 
 # ::id 1142
@@ -2738,8 +2625,7 @@
                      :mod (s / sehat
                              :mod (m / mata))))
    :op2 (u / umum
-           :ARG0 (b2 / bu
-                     :name (n / nina))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "nina"))
            :ARG1 (h / hasil
                     :mod (u2 / ulang
                              :mod (m2 / matematika)))
@@ -2759,8 +2645,7 @@
             :ARG1 (a2 / acara
                       :mod (n / nikah
                               :mod (p / putri
-                                      :mod (p2 / presiden
-                                               :name (j / jokowi)))))))
+                                      :mod (o / orang :name (n / name :op1 "presiden" :op2 "jokowi")))))))
 
 # ::id 1148
 # ::snt Aku mencuci pakaian kotor di kamar mandi atau Pak Amat membakar sampah kering di pinggir sungai
@@ -2772,8 +2657,7 @@
            :location (k2 / kamar
                          :mod (m / mandi)))
    :op2 (b / bakar
-           :ARG0 (p2 / pak
-                     :name (a3 / amat))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "amat"))
            :ARG1 (s / sampah
                     :mod (k3 / kering))
            :location (p3 / pinggir
@@ -2797,8 +2681,7 @@
 # ::snt Bu Rita bermain piano atau Pendemo berteriak
 (a / atau
    :op1 (m / main
-           :ARG0 (b / bu
-                    :name (r / rita))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "rita"))
            :ARG1 (p / piano))
    :op2 (t / teriak
            :ARG0 (d / demo)))
@@ -2809,15 +2692,13 @@
    :op1 (l / lari
            :ARG0 (u / ungsi))
    :op2 (t / tidur
-           :ARG0 (k / kakek
-                    :name (y / yusuf))))
+           :ARG0 (o / orang :name (n / name :op1 "kakek" :op2 "yusuf"))))
 
 # ::id 1152
 # ::snt Suster Mira menanam bunga mawar atau Dia datang dari Jogyakarta
 (a / atau
    :op1 (t / tanam
-           :ARG0 (s / suster
-                    :name (m / mira))
+           :ARG0 (o / orang :name (n / name :op1 "suster" :op2 "mira"))
            :ARG1 (b / bunga
                     :mod (m2 / mawar)))
    :op2 (d / datang
@@ -2828,7 +2709,7 @@
 # ::snt Andi berangkat berlatih karate atau Mereka sedang berolahraga
 (a / atau
    :op1 (b / berangkat
-           :ARG0 (a2 / andi)
+           :ARG0 (o / orang :name (n / name :op1 "andi"))
            :ARG1 (l / latih
                     :mod (k / karate)))
    :op2 (o / olahraga
@@ -2901,8 +2782,7 @@
            :time (s / sejak
                     :mod (l / lahir)))
    :op2 (p / pindah
-           :ARG0 (t / tante
-                    :name (i / indri))
+           :ARG0 (o / orang :name (n / name :op1 "tante" :op2 "indri"))
            :location (b2 / bandung)
            :time (s2 / setelah
                      :mod (n / nikah))))
@@ -2911,8 +2791,7 @@
 # ::snt Obat diminum Bu Susi setelah makan atau Upacara bendera dilaksanakan pada hari Senin
 (a / atau
    :op1 (m / minum
-           :ARG0 (b / bu
-                    :name (s / susi))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "susi"))
            :ARG1 (o / obat)
            :time (s2 / setelah
                      :mod (m2 / makan)))
@@ -2932,8 +2811,7 @@
                     :mod (t / tahun
                             :mod (l / lalu))))
    :op2 (r / rawat
-           :ARG0 (p / paman
-                    :name (g / gober))
+           :ARG0 (o / orang :name (n / name :op1 "paman" :op2 "gober"))
            :location (r2 / rumah
                          :mod (s / sakit))
            :time (k / kemarin)))
@@ -2942,8 +2820,7 @@
 # ::snt Ibu Joko pergi pasar sore ini atau Anak ayam memecahkan cangkang telur tadi.
 (a / atau
    :op1 (p / pergi
-           :ARG0 (i / ibu
-                    :name (j / joko))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "joko"))
            :location (p2 / pasar)
            :time (s / sore
                     :mod (i2 / ini)))
@@ -2958,8 +2835,7 @@
 # ::snt Bu Tina masuk sekolah senin lalu atau Jamur tumbuh di musim hujan
 (a / atau
    :op1 (m / masuk
-           :ARG0 (b / bu
-                    :name (t / tina))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "tina"))
            :ARG1 (s / sekolah)
            :time (s2 / senin
                      :mod (l / lalu)))
@@ -3003,7 +2879,7 @@
    :op1 (l / luap
            :ARG1 (a2 / air
                      :mod (s / sungai
-                             :name (b / bengawan)))
+                             :name (n/name :op1 "bengawan")))
            :time (k / kemarin))
    :op2 (j / janji
            :ARG0 (d / dia)
@@ -3020,23 +2896,20 @@
            :time (p2 / pagi
                      :mod (i / ini)))
    :op2 (l / lewat
-           :ARG0 (b / bu
-                    :name (n / nisa))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "nisa"))
            :location (s / sini)))
 
 # ::id 1167
 # ::snt Pak Harry merasa bahagia di hari wisuda anaknya atau Profesor Amri sudah berangkat ke Solo tiga hari lalu
 (a / atau
    :op1 (r / rasa
-           :ARG0 (p / pak
-                    :name (h / harry))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "harry"))
            :ARG1 (b / bahagia)
            :time (h2 / hari
                      :mod (w / wisuda
                              :mod (a2 / anak))))
    :op2 (b2 / berangkat
-            :ARG0 (p2 / profesor
-                      :name (a3 / amri))
+            :ARG0 (o / orang :name (n / name :op1 "profesor" :op2 "amri"))
             :location (s / solo)
             :time (t / tiga
                      :mod (h3 / hari
@@ -3058,11 +2931,9 @@
 # ::snt Pak joko sedih atau Bu susi Ingat kejadian itu
 (a / atau
    :op1 (s / sedih
-           :ARG0 (p / pak
-                    :name (j / joko)))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "joko")))
    :op2 (i / ingat
-           :ARG0 (b / bu
-                    :name (s2 / susi))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "susi"))
            :ARG1 (k / kejadian
                     :mod (i2 / itu))))
 
@@ -3092,8 +2963,7 @@
                               :mod (j / jam
                                       :mod (l / lalu)))))
    :op2 (d / dengar
-           :ARG0 (o / om
-                    :name (t2 / tanto))
+           :ARG0 (o / orang :name (n / name :op1 "om" :op2 "tanto"))
            :ARG1 (k2 / kabar)
            :time (h / hari
                     :mod (i / ini))))
@@ -3145,8 +3015,7 @@
 (a / atau
    :op1 (t / temu
            :ARG0 (s / saya)
-           :ARG1 (p / pak
-                    :name (a2 / andi))
+           :ARG1 (o / orang :name (n / name :op1 "pak" :op2 "andi"))
            :time (b / besok))
    :op2 (l / laksana
            :ARG1 (b2 / baik
@@ -3174,8 +3043,7 @@
 # ::snt Tante Dyah pergi berlibur ke Bali besok atau Bencana banjir datang saat musim hujan
 (a / atau
    :op1 (p / pergi
-           :ARG0 (t / tante
-                    :name (d / dyah))
+           :ARG0 (o / orang :name (n / name :op1 "tante" :op2 "dyah"))
            :ARG1 (l / libur)
            :location (b / bali)
            :time (b2 / besok))
@@ -3203,8 +3071,7 @@
 # ::snt Dokter Rina Gosok gigi setiap malam sebelum tidur atau Di musim kemarau sungai kering
 (a / atau
    :op1 (g / gosok
-           :ARG0 (d / dokter
-                    :name (r / rina))
+           :ARG0 (o / orang :name (n / name :op1 "dokter" :op2 "rina"))
            :ARG1 (g2 / gigi)
            :time (m / malam
                     :mod (s / setiap
@@ -3307,8 +3174,7 @@
 # ::snt Pak Juli makan buah mangga. atau Roni lari di sekitar lapangan.
 (a / atau
    :op1 (m / makan
-           :ARG0 (p / pak
-                    :name (j / juli))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "juli"))
            :ARG1 (b / buah
                     :mod (m2 / mangga)))
    :op2 (l / lari
@@ -3331,12 +3197,10 @@
 # ::snt Bu Rina pulang ke Depok atau Pak Joko duduk di teras depan rumah
 (a / atau
    :op1 (p / pulang
-           :ARG0 (b / bu
-                    :name (r / rina))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "rina"))
            :location (d / depok))
    :op2 (d2 / duduk
-            :ARG0 (p2 / pak
-                      :name (j / joko))
+            :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "joko"))
             :location (t / teras
                          :mod (d3 / depan
                                   :mod (r2 / rumah)))))
@@ -3345,12 +3209,10 @@
 # ::snt Bu jean buka toko. atau Kakak Dini minum kopi di kedai kopi
 (a / atau
    :op1 (b / buka
-           :ARG0 (b2 / bu
-                     :name (j / jean))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "jean"))
            :ARG1 (t / toko))
    :op2 (m / minum
-           :ARG0 (k / kakak
-                    :name (d / dini))
+           :ARG0 (o / orang :name (n / name :op1 "kakak" :op2 "dini"))
            :ARG1 (k2 / kopi)
            :location (k3 / kedai
                          :mod (k4 / kopi))))
@@ -3359,11 +3221,9 @@
 # ::snt Bu Niki menyanyikan lagu Indonesia Raya atau Ayam itu mati.
 (a / atau
    :op1 (n / nyanyi
-           :ARG0 (b / bu
-                    :name (n2 / niki))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "niki"))
            :ARG1 (l / lagi
-                    :name (i / indonesia
-                             :name (r / raya))))
+                    :name (n/name :op1 "indonesia" op2 "raya")))
    :op2 (m / mati
            :ARG1 (a2 / ayam)))
 
@@ -3385,13 +3245,11 @@
 # ::snt Bu Dian menaruh tasnya di meja. atau Nenek Tuti sakit kepala setiap hari.
 (a / atau
    :op1 (t / taruh
-           :ARG0 (b / bu
-                    :name (d / dian))
+           :ARG0 (o / orang :name (n / name :op1 "bu" :op2 "dian"))
            :ARG1 (t2 / tas)
            :location (m / meja))
    :op2 (s / sakit
-           :ARG0 (n / nenek
-                    :name (t3 / tuti))
+           :ARG0 (o / orang :name (n / name :op1 "nenek" :op2 "tuti"))
            :ARG1 (k / kepala)
            :time (h / hari
                     :mod (t4 / tiap))))
@@ -3400,14 +3258,12 @@
 # ::snt Kakak Budi hutang satu buku cerita. atau Pak Dedi makan bekal di kelas.
 (a / atau
    :op1 (h / hutang
-           :ARG0 (k / kakak
-                    :name (b / budi))
+           :ARG0 (o / orang :name (n / name :op1 "kakak" :op2 "budi"))
            :ARG1 (b2 / buku
                      :mod (s / satu
                              :mod (c / cerita))))
    :op2 (m / makan
-           :ARG0 (p / pak
-                    :name (d / dedi))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "dedi"))
            :ARG1 (b3 / bekal)
            :location (k2 / kelas)))
 
@@ -3431,7 +3287,7 @@
 # ::snt Dinda berjanji datang ke sini besok pagi atau Kami sekeluarga berangkat ke Lampung besok
 (a / atau
    :op1 (j / janji
-           :ARG0 (d / dinda)
+           :ARG0 ( o/orang :name (n/name :op1 "dinda"))
            :ARG1 (d2 / datang
                      :location (s / sini)
                      :time (b / besok
@@ -3450,7 +3306,7 @@
                     :mod (l / lalu
                             :mod (l2 / lintas)))
            :location (s / simpang
-                        :name (j2 / jonin))
+                        :name (n/name :op1 "jonin"))
            :time (p / pukul
                     :mod (s2 / sembilan)))
    :op2 (p2 / pergi
@@ -3463,8 +3319,7 @@
 # ::snt Ibu Nisa berkata bisa tidur semalam atau kuliah dilaksanakan besok jam tiga
 (a / atau
    :op1 (k / kata
-           :ARG0 (i / ibu
-                    :name (n / nisa))
+           :ARG0 (o / orang :name (n / name :op1 "ibu" :op2 "nisa"))
            :ARG1 (b / bisa
                     :ARG1 (t / tidur)
                     :time (m / malam)))
@@ -3512,19 +3367,18 @@
                          :mod (b / beranda
                                  :mod (r / rumah))))
    :op2 (b2 / baca
-            :ARG0 (d / dimas)
+            :ARG0 (o/orang :name (n/name :op1 "dimas"))
             :location (p / pustaka)))
 
 # ::id 1201
 # ::snt Andra sedang termenung di bangku taman atau Pak Jamal sedang berceramah di depan para jamaah
 (a / atau
    :op1 (m / menung
-           :ARG0 (a2 / andra)
+           :ARG0 (o/orang :name (n/name :op1 "andra"))
            :location (b / bangku
                         :mod (t / taman)))
    :op2 (c / ceramah
-           :ARG0 (p / pak
-                    :name (j / jamal))
+           :ARG0 (o / orang :name (n / name :op1 "pak" :op2 "jamal"))
            :location (d / depan
                         :ARG1 (j2 / jamaah
                                   :mod (p2 / para)))))
@@ -3539,10 +3393,9 @@
                                  :mod (p / pohon))))
    :op2 (l / libur
            :ARG0 (k / keluarga
-                    :mod (p2 / pak
-                             :name (b2 / broto)))
+                    :mod (o / orang :name (n / name :op1 "pak" :op2 "broto")))
            :location (p3 / pulau
-                         :name (b3 / bali))
+                         :name (n/name :op1 "bali"))
            :time (b4 / bulan
                      :mod (d2 / depan))))
 
@@ -3552,7 +3405,7 @@
    :op1 (w / wisata
            :ARG0 (s / siswa
                     :mod (p / para))
-           :location (y / yogyakarta)
+           :location (k / kota :name (n / name :op1 "yogyakarta"))
            :time (b / bulan
                     :mod (m / mei)))
    :op2 (b2 / baik
@@ -3594,8 +3447,7 @@
 # ::snt Bapak Siman itu memotong rumput di kebun pagi ini atau Ibu pergi ke rumah sakit
 (a / atau
    :op1 (p / potong
-           :ARG0 (b / bapak
-                    :name (s / siman))
+           :ARG0 (o / orang :name (n / name :op1 "bapak" :op2 "siman"))
            :ARG1 (r / rumput)
            :location (k / kebun)
            :time (p2 / pagi))
@@ -3611,7 +3463,7 @@
            :ARG0 (a2 / ayah)
            :location (b / bandara))
    :op2 (s / siram
-           :ARG0 (g / gani)
+           :ARG0 (o / orang :name (n / name :op1 "gani"))
            :ARG1 (t / tanam)))
 
 # ::id 1208
@@ -3623,7 +3475,7 @@
            :time (s / sore
                     :mod (h / hari)))
    :op2 (l / lari
-           :ARG0 (a3 / andi)
+           :ARG0 (o/orang :name (n/name :op1 "andi"))
            :location (l2 / lapangan
                          :mod (b / bola))))
 
@@ -3635,7 +3487,7 @@
            :ARG1 (h / halaman
                     :mod (r / rumah)))
    :op2 (k / kerja
-           :ARG0 (l / linta)
+           :ARG0 (o/orang :name (n/name :op1 "linta"))
            :ARG1 (p / pr)
            :time (p2 / pukul
                      :mod (t / tujuh
@@ -3645,14 +3497,14 @@
 # ::snt Agus membaca Koran di depan rumah atau Intan berlari di lapangan Gerilya pukul enam
 (a / atau
    :op1 (b / baca
-           :ARG0 (a2 / agus)
+           :ARG0 (o/orang :name (n/name :op1 "agus"))
            :ARG1 (k / koran)
            :location (d / depan
                         :mod (r / rumah)))
    :op2 (l / lari
            :ARG0 (i / intan)
            :location (l2 / lapangan
-                         :name (g / gerilya))
+                         :name (n/name :op1 "gerilya"))
            :time (p / pukul
                     :mod (e / enam))))
 
@@ -3664,7 +3516,7 @@
            :location (k / kolam
                         :mod (r2 / renang)))
    :op2 (a3 / ajar
-            :ARG0 (d / diki)
+            :ARG0 (o/orang :name (n/name :op1 "diki"))
             :ARG1 (b / baca
                      :mod (b2 / buku))
             :time (s / setiap
@@ -3687,7 +3539,7 @@
 # ::snt Andi naik helikopter minggu lalu atau Aku juara pertama lomba baca quran kemarin
 (a / atau
    :op1 (n / naik
-           :ARG0 (a2 / andi)
+           :ARG0 (o/orang :name (n/name :op1 "andi"))
            :ARG1 (h / helikopter)
            :time (m / minggu
                     :mod (l / lalu)))
@@ -3703,13 +3555,13 @@
 # ::snt Hendra menjadi alumni lulusan terbaik di Universitas Islam Malang tahun 2013 atau Ayahnya berdagang siomay
 (a / atau
    :op1 (j / jadi
-           :ARG0 (h / hendra)
+           :ARG0 (o/orang :name (n/name :op1 "hendra"))
            :ARG1 (a2 / alumni
                      :mod (l / lulusan
                              :mod (b / baik)))
            :location (u / universitas
                         :mod (i / islam
-                                :location (m / malang)))
+                                :location (k/kota :name (n/name :op1 "malang")))
            :time (t / tahun
                     :mod 2013))
    :op2 (d / dagang
@@ -3720,10 +3572,10 @@
 # ::snt Adi menjual kayu di kota Jakarta sepanjang tahun atau Hunian ini terlihat sangat indah hari ini
 (a / atau
    :op1 (j / jual
-           :ARG0 (a2 / adi)
+           :ARG0 (o/orang :name (n/name :op1 "adi"))
            :ARG1 (k / kayu)
            :location (k2 / kota
-                         :name (j2 / jakarta))
+                         :name (n/name :op1 "jakarta"))
            :time (p / panjang
                     :mod (t / tahun)))
    :op2 (l / lihat
@@ -3764,7 +3616,7 @@
 # ::snt Ani lolos mengikuti ujian yang dikeluarkan oleh perusahaan itu kemarin atau Rumah ini bersertifikat atas nama Herlinda
 (a / atau
    :op1 (l / lolos
-           :ARG0 (a2 / ani)
+           :ARG0 (o/orang :name (n/name :op1 "ani"))
            :ARG1 (i / ikut
                     :ARG1 (u / uji
                              :mod (k / keluar
@@ -3774,7 +3626,7 @@
            :ARG0 (r / rumah)
            :mod (a3 / atas
                     :mod (n / nama
-                            :name (h / herlinda)))))
+                            :name (n/name :op1 "herlinda")))))
 
 # ::id 1219
 # ::snt Orang ini ada di luar rumah dari tadi atau Neneknya meninggal tadi pagi pukul enam
@@ -3796,7 +3648,7 @@
 # ::snt Diana pergi ke sekolah naik sepeda motor siang ini atau Ayah pulang ke desa malam tadi
 (a / atau
    :op1 (p / pergi
-           :ARG0 (d / diana)
+           :ARG0 (o/orang :name (n/name :op1 "diana"))
            :location (s / sekolah)
            :mod (n / naik
                    :ARG1 (s2 / sepeda
@@ -3822,7 +3674,7 @@
    :op2 (m / main
            :ARG0 (a4 / adik)
            :ARG1 (b / boneka
-                    :name (b2 / barbie))))
+                    :name (n/name :op1 "barbie"))))
 
 # ::id 1222
 # ::snt Mobil itu menabrak pagar rumah sampai rusak siang ini atau Ani memberikan ucapan selamat kepada adiknya tadi pagi
