@@ -28,11 +28,14 @@ Notebooks dan utils digunakan untuk melakukan eksplorasi terutama untuk melakuka
 ```
 Secara programatik ini dilakukan dengan menggunakan regex berikut (belum handle nama dnegan satu kata saja):
 - ```regex
-  \([a-z0-9\s]*/ ([a-z0-9]*)[\n\s]*:name \([a-z0-9\s]*/ ([a-z0-9]*)\)\)
+  ( *)(:ARG[0-9]) *\([a-z0-9\s]*\/ *([a-z0-9]*)[\n\s ]*:name \([a-z0-9\s]*\/ *([a-z0-9]*) *\)\)
   ```
   dan replace dengan:
   ```
-  (o / orang :name (n / name :op1 "$1" :op2 "$2"))
+  $1$2 (o / orang 
+  $1$1:name (n / name 
+  $1$1$1:op1 "$3" 
+  $1$1$1:op2 "$4"))
   ```
 - Mencari kata dengan huruf besar, dan menggantinya menjadi named entity
 TODO: Bu Zee Zee atau nama yang lebih dari 2 kata belum dihandle
